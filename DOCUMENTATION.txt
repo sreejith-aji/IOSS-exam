@@ -1,0 +1,33 @@
+
+FOR RUNNING THIS PROJECT
+
+1. Activate Environment
+cd <project-folder>
+env\Scripts\activate   # Windows
+# or
+source env/bin/activate  # macOS/Linux
+
+2. Install Dependencies
+pip install -r requirements.txt
+# or manually:
+pip install Django python-dotenv
+
+3. Apply Database Migrations
+python manage.py makemigrations
+python manage.py migrate
+
+4. Start Development Server
+python manage.py runserver
+
+5. Access Project
+
+Open a browser and go to:
+
+http://127.0.0.1:8000/
+
+
+Enter a long URL in the form.
+
+Click submit → short URL is generated.
+
+Open short URL → redirected to original URL.
